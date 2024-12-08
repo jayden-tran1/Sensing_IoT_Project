@@ -160,19 +160,19 @@ create_plot(mydata, "humidity", "Humidity Over Time with Moving Average", "humid
 
 # # plot for Humidity
 # create_plot(mydata, "humidity", "Humidity Over Time", "humidity_over_time.png", line_color = "blue")
-# 
+
 # # plot for Temperature
 # create_plot(mydata, "temperature", "Temperature Over Time", "temperature_over_time.png", line_color = "red")
-# 
+
 # # plot for API Temperature
 # create_plot(mydata, "api_temperature", "API Temperature Over Time", "api_temperature_over_time.png", line_color = "green")
-# 
+
 # # plot for API Humidity
 # create_plot(mydata, "api_humidity", "API Humidity Over Time", "api_humidity_over_time.png", line_color = "purple")
-# 
+
 # # plot for API Clouds
 # create_plot(mydata, "api_clouds", "API Clouds Over Time", "api_clouds_over_time.png", line_color = "orange")
-# 
+
 # # plot for API Windspeed
 # create_plot(mydata, "api_windspeed", "API Windspeed Over Time", "api_windspeed_over_time.png", line_color = "brown")
 
