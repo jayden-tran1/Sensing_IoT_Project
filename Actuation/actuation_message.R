@@ -6,9 +6,9 @@ library(httr)
 library(jsonlite)
 
 # CallMeBot API details
-phone_number <- "+447856787414" 
-api_key <- "5510890"
-message <- "Hello from R! Testing Testing 2 3."
+phone_number <- "+xxxxxxxxxxx" 
+api_key <- "xxxxxxx"
+message <- "Hello from R. Testing Testing 2 3."
 
 # encode a string (the message) to handle special characters
 encoded_message <- URLencode(message)
