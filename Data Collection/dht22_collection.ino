@@ -5,12 +5,12 @@
 #include <Arduino.h>
 
 // WiFi credentials
-const char* ssid = "CommunityFibre10Gb_BFA1D";
-const char* password = "x9z1wbxm6d";
+const char* ssid = "CommunityFibrexxxx_xxxxx";
+const char* password = "xxxxxxxxxx";
 
 // ThingSpeak channel details
-#define CHANNEL_ID 2722292
-#define CHANNEL_API_KEY "KL9PLNZY7NBKU5WH"
+#define CHANNEL_ID xxxxxxx
+#define CHANNEL_API_KEY "XXXXXXXXXXXXXXXXXX"
 
 // creating a WiFiClient object to establish TCP connection for sending data to ThingSpeak
 WiFiClient client;
@@ -32,7 +32,7 @@ void connectToWiFi(){
     delay(500);
     Serial.println("Wifi connecting...");
   }
-  Serial.println("Wifi connection established!");                     // print when successfully connected
+  Serial.println("Wifi connection established");                     // print when successfully connected
   Serial.print("Connected to WiFi network with IP Address: ");
   Serial.println(WiFi.localIP());
 
