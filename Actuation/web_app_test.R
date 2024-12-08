@@ -13,8 +13,8 @@ library(corrplot)
 library(forecast)
 
 # define base urls (both for thingspeak, but different channels)
-thingspeak_base_url <- "https://api.thingspeak.com/channels/2722292/feeds.json?api_key=4361LIQAX967U4LR"
-openweather_base_url <- "https://api.thingspeak.com/channels/2722321/feeds.json?api_key=MNH3AW0JYV8RBDN1"
+thingspeak_base_url <- "https://api.thingspeak.com/channels/2722292/feeds.json?api_key=xxxxxxxxxxxxxxxx"
+openweather_base_url <- "https://api.thingspeak.com/channels/2722321/feeds.json?api_key=xxxxxxxxxxxxxxxx"
 
 # read the new csv with linearly interpolated values
 mydata <- read.csv("final_data_readings_updated.csv", header = TRUE)
@@ -604,8 +604,8 @@ server <- function(input, output, session) {
   # 'Help Mishell' tab whatsapp notification 
   observeEvent(input$btn_feed, {
     message <- "Reminder: Time to feed Mishell!"
-    send_whatsapp_message("+447856787414", "5510890", message)
-    # send_whatsapp_message("+447856787414", "5510890", "Reminder: Time to feed Mishell!")
+    send_whatsapp_message("+xxxxxxxxxxx", "xxxxxxx", message)
+    # send_whatsapp_message("+xxxxxxxxxxx", "xxxxxxx", "Reminder: Time to feed Mishell!")
     # Display GIF
     output$temp_gif <- renderUI({
       tags$img(
@@ -616,7 +616,7 @@ server <- function(input, output, session) {
   })
 
   observeEvent(input$btn_humidity, {
-    send_whatsapp_message("+447856787414", "5510890", "Humidity Alert: Please check Mishell's enclosure humidity!")
+    send_whatsapp_message("+xxxxxxxxxxx", "xxxxxxx", "Humidity Alert: Please check Mishell's enclosure humidity!")
     # Display GIF
     output$temp_gif <- renderUI({
       tags$img(
@@ -627,7 +627,7 @@ server <- function(input, output, session) {
   })
   
   observeEvent(input$btn_upside_down, {
-    send_whatsapp_message("+447856787414", "5510890", "EMERGENCY: Check if Mishell is upside down again...")
+    send_whatsapp_message("+xxxxxxxxxxx", "xxxxxxx", "EMERGENCY: Check if Mishell is upside down again...")
     output$temp_gif <- renderUI({
       tags$img(
         src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWc2MXM4dDk0NmU3NG5jNjVqa2hnaWJyMzNkM3R4bmZoOXA2enJ4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0Extn1wgzXyZn0J2/giphy.gif",
