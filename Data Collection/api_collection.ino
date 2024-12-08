@@ -10,16 +10,16 @@
 WiFiClient client;
 
 // defining WiFi credentials
-const char* ssid = "CommunityFibre10Gb_xxxxxx";
-const char* password = "x9z1xxxxxx";
+const char* ssid = "CommunityFibrexxxx_xxxxxx";
+const char* password = "xxxxxxxxxx";
 
 // defining the OpenWeather API details
-const char* api_key = "xxxxcd5fdf7ee6a567fe18318dxxxxx"; 
+const char* api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"; 
 const char* base_url = "http://api.openweathermap.org/data/2.5/weather?";
 
 // defining ThingSpeak channel details
-#define CHANNEL_ID 27223xx
-#define CHANNEL_API_KEY "H7ZOEP5JFQDJDPNU"
+#define CHANNEL_ID xxxxxxx
+#define CHANNEL_API_KEY "xxxxxxxxxxxxxxxx"
 
 // defining latitude and longitudinal values for London
 const char* latitude_val = "51.507351";
@@ -38,7 +38,7 @@ void connectToWiFi(){
     delay(500);
     Serial.println("Wifi connecting...");
   }
-  Serial.println("Wifi connection established!");            
+  Serial.println("Wifi connection established");            
   Serial.print("Connected to WiFi network with IP Address: ");
   Serial.println(WiFi.localIP());
 
