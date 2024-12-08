@@ -4,6 +4,7 @@ Smart Tortoise Enclosure End-to-End System, by Jayden Tran
 # Scripts
 
 #### It is important to note that script files will not run without the API keys and credentials files. These have not been committed to GitHub.
+#### Please note that deploying the app to ShinyApps.io did not require any additional coding. The process was completed using R's built-in publishing functionality, which only required the input of a deployment token.
 
 **Data Collection:**
 
@@ -33,7 +34,7 @@ CSV files containing analysed data readings version with updated timestamps and 
 
 **Actuation:**
 * `actuation_message.R` : Script that sends Whatsapp messages (that will be used in the web app code)
-* `web_app_test.R` : Script for a Shiny web app to monitor, analyse, and forecast humidity in the tortoise enclosure using DHT22 and OpenWeather API data, with real-time notifications and visualizsations. Contains reactive polling and automatic WhatsApp messages if forecasted humidity will drop below 40%
+* `web_app.R` : Script for a Shiny web app to monitor, analyse, and forecast humidity in the tortoise enclosure using DHT22 and OpenWeather API data, with real-time notifications and visualizsations. Contains reactive polling and automatic WhatsApp messages if forecasted humidity will drop below 40%
  
 #### the project was powered by ThingSpeak and ShinyApps.IO
 
